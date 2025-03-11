@@ -13,7 +13,7 @@ COPY ./src ./src
 RUN npm run build
 
 # Execiution image
-FROM node:23.9-alpine
+FROM node:23.9-slim
 
 ENV NODE_ENV production
 WORKDIR /app
