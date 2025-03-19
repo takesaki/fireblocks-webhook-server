@@ -8,7 +8,7 @@
     "build": "tsc -p .",
     "dev": "npx ts-node src/index.ts",
     "test": "jest",
-    "lambda": "npm run build && mkdir -p dist && cp package.json dist/ && cd dist && npm install --production && zip -r ../function.zip ."
+    "lambda": "npm run build && mkdir -p dist && mkdir -p lambda && cp package.json dist/ && cd dist && npm install --production && zip -r ../lambda/function.zip ."
   },
   "keywords": [],
   "author": "",
